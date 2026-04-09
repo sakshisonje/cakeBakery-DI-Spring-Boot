@@ -8,7 +8,8 @@ public class CakeBaker {
     private final Frosting frosting;
     private final Syrup syrup;
 
-    public CakeBaker( @Qualifier("frostingChocolate") Frosting frosting,
+    public CakeBaker(
+            @Qualifier("frostingChocolate") Frosting frosting,
                      @Qualifier("syrupStrawberry") Syrup syrup){
         this.frosting = frosting;
         this.syrup = syrup;
